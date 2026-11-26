@@ -29,6 +29,14 @@ Copy this block for each session.
 - **What broke, and how I fixed it:** No issues
 - **Committed?** Yes, commit message: Add demo pickup reservations
 
+### Session 3 — Nov. 26 — driver: Andre
+
+- **Goal for this session:** Add an interactive demo to Explore that shows how more local sellers can give buyers more matching gear.
+- **Key prompt I gave ChatGPT:** Help me add a network-effect demo to Explore on Hockey Gear Near You. Let visitors switch between one and three local hockey associations without clearing their search. Update the fictional listings and match count so searching goalie shows one match with one association and more with three. Briefly explain how more sellers help buyers find gear. Keep Save and Reserve for pickup working in both views. Use plain HTML and JavaScript with no external libraries. Show me exactly what to find and paste in github.dev and how to test it on the live site.
+- **What worked:** I searched for "goalie" on the live explore page and got one match with one association and two matches with three. The search stayed in the box, and the goalie pads still showed saved and reserved when i switched back. 
+- **What broke, and how I fixed it:** No issues 
+- **Committed?** Yes, Add network-effect demo to explore
+
 ## Things that broke (running list)
 
 | Date | What went wrong | What we tried | What finally fixed it |
