@@ -67,6 +67,19 @@
         <input type="search" id="search-box" placeholder="Type to filter…">
       </label>
 
+       <label class="search">
+        <span>Network-effect demo</span>
+        <select id="association-count" aria-describedby="network-explanation">
+          <option value="one">One local hockey association</option>
+          <option value="three" selected>Three local hockey associations</option>
+        </select>
+      </label>
+      <p class="muted" id="network-explanation">
+        More participating associations bring more local sellers, giving
+        buyers a better chance of finding the gear they need.
+        Switch between the two options to compare your results.
+      </p>
+      <p class="muted" id="match-count" role="status"></p>
       <p class="muted" id="saved-count"></p>
       <div class="grid" id="listing-grid"></div>
       <p class="empty" id="empty-message" hidden>Nothing matches your search.</p>

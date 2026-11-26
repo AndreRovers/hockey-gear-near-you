@@ -76,6 +76,11 @@ const reservedIds = new Set();
   // ----------------------------------------------------------
   const grid = document.getElementById("listing-grid");
   const searchBox = document.getElementById("search-box");
+   const associationCount = document.getElementById("association-count");
+  const matchCount = document.getElementById("match-count");
+
+  // Four sample listings represent the first association.
+  const firstAssociationIds = new Set([101, 103, 105, 107]);
   const emptyMessage = document.getElementById("empty-message");
   const savedCount = document.getElementById("saved-count");
 
@@ -144,19 +149,24 @@ const reservedIds = new Set();
   function renderListings() {
     const query = searchBox.value.trim().toLowerCase();
     const matches = LISTINGS.filter(function (item) {
+        if (associationCount.value === "one" && !firstAssociationIds.has(item.id)) {
+        return false;
+      }
       const text = (item.name + " " + item.category + " " + item.description).toLowerCase();
       return text.indexOf(query) !== -1;
     });
 
     grid.replaceChildren.apply(grid, matches.map(makeCard));
     emptyMessage.hidden = matches.length > 0;
+     matchCount.textContent =
+      matches.length === 1 ? "1 matching listing" : matches.length + " matching listings";
     savedCount.textContent = savedIds.length === 0
       ? "Tap Save on anything you like."
       : "You've saved " + savedIds.length + " item(s) on this device.";
   }
 
   searchBox.addEventListener("input", renderListings);
-
+associationCount.addEventListener("change", renderListings);
   // ----------------------------------------------------------
   // 5. Start up.
   // ----------------------------------------------------------
