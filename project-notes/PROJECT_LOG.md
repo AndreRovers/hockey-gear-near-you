@@ -21,7 +21,13 @@ Copy this block for each session.
 - **What broke, and how we fixed it:** Codespaces showed a usage or budget limit, so i switched to github.dev to keep editing.
 - **Committed?** Yes — commit message: Add eight fictional hockey gear listings.
 
----
+### Session — Nov. 26 — driver: Andre
+
+- **Goal for this session:** Add a demo pickup reservation to the Explore page.
+- **Key prompt I gave ChatGPT:** Help me add a mock pickup reservation to the Explore page for Hockey Gear Near You. In app.js, add a Reserve for pickup button beside Save on each listing. When someone clicks it, change that listing’s button to Reserved and show “Demo reservation confirmed. No pickup has been arranged.” Keep Save working and reset the demo reservations when the page refreshes. I’m using github.dev, so show me exactly what lines to find and where to paste the code.
+- **What worked:** I tested the live site. Clicking “Reserve for pickup” changed the listing to “Reserved” and showed a demo confirmation.
+- **What broke, and how I fixed it:** No issues
+- **Committed?** Yes, commit message: Add demo pickup reservations
 
 ## Things that broke (running list)
 
