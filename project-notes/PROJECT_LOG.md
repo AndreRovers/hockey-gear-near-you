@@ -2,9 +2,9 @@
 
 Keep this up to date as you go — a few lines per work session is enough. It's much harder to reconstruct at the end.
 
-**Team name:**
-**Startup name:**
-**Live site link:**
+**Team name:** Andre
+**Startup name:** Hockey Gear Near You
+**Live site link:** https://andrerovers.github.io/hockey-gear-near-you/
 
 ---
 
@@ -12,15 +12,14 @@ Keep this up to date as you go — a few lines per work session is enough. It's 
 
 Copy this block for each session.
 
-### Session — [date] — driver: [first name]
+### Session — [Nov 25th] — driver: [Andre]
 
-- **Goal for this session:**
-- **Key prompts we gave Copilot** (paste the important ones):
-  1.
-  2.
-- **What worked:**
-- **What broke, and how we fixed it:**
-- **Committed?** yes / no — commit message:
+- **Goal for this session:** Set up Hockey Gear Near You and eight fictional gear listings
+- **Key prompt I gave ChatGPT** (paste the important ones):
+  1. My startup is Hockey Gear Near You. it's a local marketplace where hockey families can buy affordable used gear and sell equipment their kids have outgrown. Help me update the homepage text in index.html and replace the sample listings in data.js with eight fictional listings across different categories, including skates, sticks, gloves, and goalie gear. Give each listing a category, a size or relevant measurement, a price in Canadian dollars, a condition, and a general pickup area. Use generic product names and keep the existing layout and student prototype footer. I'm using github.dev , so show me exactly what code to change and where to put it.
+- **What worked:** I confirmed all eight appeared on the explore page.
+- **What broke, and how we fixed it:** Codespaces showed a usage or budget limit, so i switched to github.dev to keep editing.
+- **Committed?** Yes — commit message: Add eight fictional hockey gear listings.
 
 ---
 
@@ -28,7 +27,7 @@ Copy this block for each session.
 
 | Date | What went wrong | What we tried | What finally fixed it |
 |---|---|---|---|
-| | | | |
+| Nov. 25 | Codespaces showed a usage or budget limit. | Tried opening a Codespace from my repository. | Switched to `github.dev` to keep editing. |
 
 ## What a real version would need
 
