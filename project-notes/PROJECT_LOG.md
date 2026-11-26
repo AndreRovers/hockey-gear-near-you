@@ -37,6 +37,13 @@ Copy this block for each session.
 - **What broke, and how I fixed it:** No issues 
 - **Committed?** Yes, Add network-effect demo to explore
 
+### Session 4 — Nov. 26 — driver: Andre
+
+- **Goal for this session:** Replace the starter text on About and update Home to mention the demo reservation.
+- **Key prompt I gave ChatGPT:** Help me update my homepage and about page on my website.
+- **What worked:** The about page updated with the information on why I started this website and the homepage updated with number three explainng that you can save gear to compare options or try a demo pickup reservation.
+- **What broke, and how I fixed it:** No issues
+- **Committed?** Yes, Update home page and about page copy.
 ## Things that broke (running list)
 
 | Date | What went wrong | What we tried | What finally fixed it |
