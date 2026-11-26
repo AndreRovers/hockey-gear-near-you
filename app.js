@@ -32,7 +32,7 @@
   };
 
   let savedIds = storage.get("savedIds", []);
-
+const reservedIds = new Set();
   // ----------------------------------------------------------
   // 2. Put the startup's name and pitch on the page.
   // ----------------------------------------------------------
@@ -103,7 +103,31 @@
       toggleSaved(item.id);
     });
 
-    card.append(tag, title, text, button);
+    const reserveButton = document.createElement("button");
+    reserveButton.type = "button";
+    reserveButton.className = "button secondary";
+    reserveButton.style.marginInlineStart = "0.5rem";
+
+    const confirmation = document.createElement("p");
+    confirmation.setAttribute("role", "status");
+
+    function updateReservation() {
+      const isReserved = reservedIds.has(item.id);
+      reserveButton.textContent = isReserved ? "Reserved" : "Reserve for pickup";
+      reserveButton.setAttribute("aria-disabled", String(isReserved));
+      confirmation.textContent = isReserved
+        ? "Demo reservation confirmed. No pickup has been arranged."
+        : "";
+    }
+
+    reserveButton.addEventListener("click", function () {
+      if (reservedIds.has(item.id)) return;
+      reservedIds.add(item.id);
+      updateReservation();
+    });
+
+    updateReservation();
+    card.append(tag, title, text, button, reserveButton, confirmation);
     return card;
   }
 
