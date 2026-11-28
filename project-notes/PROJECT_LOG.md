@@ -56,7 +56,11 @@ Everything we wanted but faked or left out — real logins, a real database, pay
 
 | Feature we faked or skipped | Why a real company would need it | How hard / expensive? |
 |---|---|---|
-| | | |
+| Shared database for listings and reservations | Buyers and sellers need to see the same availability so two buyers can’t reserve the same goalie pads. | Medium difficulty. A managed database would have an ongoing cost, and the reservation system would need to prevent double bookings. |
+| User accounts | Sellers would need to sign in so they can update the gear they have posted and see which items have been reserved. | Medium difficulty. A sign-in service could handle the accounts, but I would still need to make sure sellers can only edit their own listings. |
+| Photo storage | Sellers would need to upload pictures of their gear so buyers can see the condition and decide if it is worth picking up. | Low to medium difficulty. I would need to set up photo uploads and limit how big the files can be. Storage would cost more as people add more pictures. |
+| Payment processing | The marketplace would need a way to collect the small fee from the seller once a piece of equipment has actually been sold. | Medium difficulty. I would need to connect a payment service and figure out how to confirm that the sale went through. The service could also charge a fee for each payment. |
+| Listing moderation | Buyers would need a way to report a listing if a seller leaves out something important, like a broken strap on a pair of goalie pads. | Medium difficulty. I could add a report button, and someone would need to check the reports and ask sellers to fix misleading listings. |
 
 ## Reflection (fill in at the end)
 
