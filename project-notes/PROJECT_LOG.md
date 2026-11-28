@@ -65,5 +65,13 @@ Everything we wanted but faked or left out — real logins, a real database, pay
 ## Reflection (fill in at the end)
 
 1. What surprised you most about building software with AI?
-2. Which parts were easy, and which were hard? Why do you think that is?
-3. If a competitor had the same AI tool, how long would it take them to copy your site?
+
+   What surprised me most about building software with AI was seeing the site actually work after I completed it. When I went on my phone to test it out and it worked it was a nice surprise to see how easily AI can make a real site from scratch and get it up and running so quickly.
+   
+3. Which parts were easy, and which were hard? Why do you think that is?
+
+    One part that was hard was getting around the code spaces limit at the very start. This was harder because I had to figure out another way to get the codespaces to work on my own. One part that I found to be easy was adding the reserve option to the listings on the explore page. This was easy because all I had to do was send a prompt to the AI asking it to help me make an option to reserve and then the AI would do all the rest for me.
+  
+5. If a competitor had the same AI tool, how long would it take them to copy your site?
+   
+  If a competitor had the same AI tool and wanted to copy my site I think they could copy and make their version in a weekend or even less. The part that would take a longer amount of time for them would be to build connections with families who are involved in hockey. Without these connections they would just have an empty website with nothing being listed and no buyers browsing looking to purchase something.
